@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,400,700,700i,800,800i,900,900i');
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	background: #6696df;
+	margin: 0;
+}
+
+.tapes {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.tapes>div {
+	position: relative;
+}
+
+.tapes>div::before {
+	position: absolute;
+	content: "403 FORBIDDEN /// CAUTION /// 403 FORBIDDEN /// CAUTION /// 403 FORBIDDEN /// CAUTION /// 403 FORBIDDEN /// CAUTION /// 403 FORBIDDEN /// CAUTION";
+	display: block;
+	color: black;
+	background: yellow;
+	font-weight: bold;
+	font-size: 4rem;
+	white-space: nowrap;
+	padding: .7rem 0;
+}
+
+.tapes>div:nth-child(1)::before {
+	top: 150px;
+	transform: skewY(10deg);
+}
+
+.tapes>div:nth-child(2)::before {
+	transform: skewY(-10deg);
+}
